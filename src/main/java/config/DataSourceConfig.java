@@ -9,7 +9,7 @@ public class DataSourceConfig {
 	@Bean
 	public DriverManagerDataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://google/occupationdb?cloudSqlInstance=cloudnhom12:asia-southeast1:jobseeking&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=");
 	    dataSource.setUsername("root");
 	    dataSource.setPassword("");
